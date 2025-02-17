@@ -1,11 +1,9 @@
-extends Node
+extends Unit
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var a = Main.new()
-	
-	print(a.sqrt(4))
+	self.speed
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

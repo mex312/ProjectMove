@@ -17,7 +17,7 @@ impl Main {
 #[godot_api]
 impl INode2D for Main {
     fn init(base: Base<Node2D>) -> Self {
-        Main {
+        Self {
             base
         }
     }
