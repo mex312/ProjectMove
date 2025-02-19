@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://c38yoxjb4kxp4"]
+
+[ext_resource type="Script" path="res://addons/grid_display/grid_display.gd" id="1_r23qp"]
+
+[sub_resource type="TileSet" id="TileSet_808q3"]
+
+[node name="MainWorld" type="World"]
+tile_set = SubResource("TileSet_808q3")
+
+[node name="Unit" type="Unit" parent="." node_paths=PackedStringArray("world")]
+world = NodePath("..")
+position = Vector2(46, 45)
+
+[node name="Grid Display" type="Node2D" parent="."]
+script = ExtResource("1_r23qp")
+grid_size = Vector2(80, 45)
+line_size = Vector2(1, 1)
+cell_size = Vector2(16, 16)
+border_color = Color(1, 1, 1, 0)
+vline_color = Color(0.412152, 0.412152, 0.412152, 1)
+hline_color = Color(0.411765, 0.411765, 0.411765, 1)

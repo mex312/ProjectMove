@@ -1,6 +1,6 @@
 use godot::prelude::*;
 
-mod main_scene;
+mod world;
 mod unit;
 
 struct ProjectMove;
